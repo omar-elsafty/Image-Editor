@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main" class="main-container">
+
+        <div class="right-sec noSelect">
+            <div class="logo">Image Editor</div>
+
+            <div class="fontButtons">
+                <div id="add" style="display: flex; justify-content: space-between;">
+                    <div>Add text</div>
+                    <span><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="inputSect">
+                    <div class="form-group">
+                        <label class="label">Font size</label>
+                        <input type="number" class="input" id="add-font">
+                    </div>
+                    <div class="form-group">
+                        <label class="label">Color</label>
+                        <input type="color" class="input" id="add-color">
+                    </div>
+                    <button class="btn" id="addBtn">Add</button>
+                </div>
+            </div>
+            <button class="btn saveBtn" id="saveBtn">Save</button>
+
+        </div>
+
+        <div class="my-container">
+            <div class="upper-nav">
+            </div>
+            <div class="wrapper" id="wrapper">
+                <div class="img">
+                    <img id="image" alt="">
+                </div>
+                <div id="content" class="content">
+                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <div class="text">No file chosen, yet!</div>
+                </div>
+            </div>
+            <input type="file" id="default-btn" hidden>
+            <button id="custom-btn">Choose a file</button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="addVariable.js"></script>
+
+</html>
